@@ -40,7 +40,7 @@ class AppWriteAuth {
         }
     }
 
-    async SignInWithGoogle() {
+    async SignInWithGoogle(HOME_URL, LOGIN_URL) {
         try {
         const response = await this.auth.createOAuth2Session(
             "google",

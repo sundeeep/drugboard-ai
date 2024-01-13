@@ -1,8 +1,8 @@
 import { Client } from "appwrite";
-import { ENDPOINT, PROJECT_ID } from "./appWriteSecrets";
 
 const appwriteClient = new Client();
 
-appwriteClient.setEndpoint(ENDPOINT).setProject(PROJECT_ID);
+appwriteClient.setEndpoint('https://cloud.appwrite.io/v1')
+    .setProject('65a22a9e2eaa88f35d94');
 
 export { appwriteClient };

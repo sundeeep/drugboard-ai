@@ -1,0 +1,11 @@
+{
+    "posts": [
+        {
+            "postID": 1,
+            "postTitle": "Hello World, This is the first post.",
+            "postDescription": "Welcome to drugboard.ai, which is linkedin like platform for Chemists, Doctors and Scientists.",
+            "files": [],
+            "images": []
+        }
+    ]
+}
