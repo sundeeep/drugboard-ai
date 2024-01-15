@@ -1,4 +1,4 @@
-"use client"
+
 import Image from "next/image";
 import AppWriteAuth from "@/appwrite/auth.service";
 import { useState } from "react";
@@ -24,30 +24,31 @@ const Aside = () => {
         <aside className="flex flex-col justify-between items-start">
             {/* Logo */} 
             <div className="">
-            <Image
-                src="/drugboardLogo.png"
-                alt="Drugboard.ai Logo"
-                width="250"
-                height="100"
-            />
+                <Image
+                    src="/drugboardLogo.png"
+                    alt="Drugboard.ai Logo"
+                    width="250"
+                    height="100"
+                />
             </div>
+            
 
             <button
-            className="bg-white text-black font-semibold uppercase px-3 py-2"
-            onClick={handleSignIn}
+                className="bg-white text-black font-semibold uppercase px-3 py-2"
+                onClick={handleSignIn}
             >
-            {logInLoader ? <h1>Signing Up ....</h1> : <h1>SignIn With Google</h1>}
+                {logInLoader ? <h1>Signing Up ....</h1> : <h1>SignIn With Google</h1>}
             </button>
 
             {/* Navbar */}
             <nav>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </nav>
             {/* Logout Button */}
         </aside>

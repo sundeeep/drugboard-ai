@@ -1,21 +1,14 @@
 "use client";
 import Aside from "./components/Aside";
+import MainSection from "./components/MainSection";
 
 const Home = () => {
-  
   return (
-    <div className="bg-[#0F172A] lg:h-screen lg:w-screen">
-      
+    <div className="bg-[#0F172A] lg:h-screen lg:w-screen flex items-start justify-between">
       <Aside />
-      <div>
-        {/* Header */}
-        <header className="flex justify-between"></header>
-
-        {/* Main Section */}
-      </div>
+      <MainSection />
     </div>
   );
-
 };
 
 export default Home;
