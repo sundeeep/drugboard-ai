@@ -1,7 +1,6 @@
 import { appwriteClient } from ".";
 import { Account, ID } from "appwrite";
 import { toast } from "react-toastify";
-import { HOME_URL, LOGIN_URL } from "./appWriteSecrets";
 
 class AppWriteAuth {
     auth;
@@ -40,14 +39,15 @@ class AppWriteAuth {
         }
     }
 
-    async SignInWithGoogle(HOME_URL, LOGIN_URL) {
+    async SignInWithGoogle(SUCCESS_URL, FAILURE_URL) {
         try {
         const response = await this.auth.createOAuth2Session(
             "google",
-            HOME_URL,
-            LOGIN_URL
+            SUCCESS_URL,
+            FAILURE_URL
         );
-        console.log(response);
+        
+            return response;  
         } catch (error) {
         console.log("ERROR in SignInWithGoogle():: ", error.response);
         toast.error(error.message);
@@ -78,19 +78,17 @@ class AppWriteAuth {
 
     async getUser() {
         const response = await this.auth.get();
-        console.log(response);
         return response;
     }
 
     async logOut() {
         const response = await this.auth.deleteSession("current");
-        console.log(response);
+
         return response;
     }
 
     async verifyEmail(URL) {
         const response = await this.auth.createVerification(URL);
-        console.log(response);
         return response;
     }
 }
