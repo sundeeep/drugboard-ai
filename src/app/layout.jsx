@@ -1,6 +1,4 @@
-import { StyledEngineProvider } from '@mui/material'
 import './globals.css'
-import { ToastContainer } from 'react-toastify'
 
 export const metadata = {
   title: 'drugboard - Home',
@@ -11,10 +9,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <StyledEngineProvider injectFirst>
+        <div>
           {children}
-          <ToastContainer />
-        </StyledEngineProvider>
+        </div>
       </body>
     </html>
   )

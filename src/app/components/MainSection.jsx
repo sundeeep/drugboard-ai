@@ -3,7 +3,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import NotificationsActiveRoundedIcon from "@mui/icons-material/NotificationsActiveRounded";
 import Image from "next/image";
 import VpnKeyRoundedIcon from "@mui/icons-material/VpnKeyRounded";
-import AppWriteAuth from "@/appwrite/auth.service";
+import AppWriteAuth from "../../appwrite/auth.service";
 import { useState } from "react";
 
 const MainSection = () => {

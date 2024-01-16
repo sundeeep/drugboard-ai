@@ -12,7 +12,7 @@ const Jobs = () => {
 
     getUser();
   })
-  return <h1>Hello, Jobs Page</h1>;
+  return <div>Hello, Jobs Page</div>;
 };
 
 export default Jobs;
