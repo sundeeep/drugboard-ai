@@ -18,7 +18,8 @@
     "ketcher-react": "^2.13.0",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-toastify": "^10.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^10",
