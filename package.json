@@ -15,7 +15,6 @@
     "@mui/material": "^5.15.4",
     "appwrite": "^13.0.1",
     "next": "14.0.4",
-    "next-cloudinary": "^5.18.0",
     "react": "^18",
     "react-dom": "^18",
     "react-toastify": "^10.0.2"
