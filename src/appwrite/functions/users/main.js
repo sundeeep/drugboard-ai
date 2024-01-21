@@ -1,3 +1,3 @@
-export default async ({req,res,log,error}) => {
-    return res.send("Hello, World!");
+export default async (context) => {
+    return context.res.send("Hello, World!");
 }
