@@ -5,12 +5,11 @@ import { useEffect } from "react";
 const Jobs = () => {
   const account = new AppWriteAuth();
   useEffect(() => {
-    const getUser = async () => {
+    const getUserData = async () => {
       const user = await account.getUser();
       user && console.log(user)
     }
-
-    getUser();
+    getUserData();
   })
   return <div>Hello, Jobs Page</div>;
 };

@@ -81,9 +81,13 @@ class AppWriteAuth {
         return response;
     }
 
+    async getCurrentUserSession() {
+        const response = await this.auth.getSession('current');
+        return response;
+    }
+
     async logOut() {
         const response = await this.auth.deleteSession("current");
-
         return response;
     }
 
