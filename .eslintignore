@@ -1,0 +1,3 @@
+/src/appwrite/functions/users/*.js
+/src/appwrite/functions/*.js
+/src/redux-store/*.js
