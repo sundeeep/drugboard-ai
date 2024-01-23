@@ -8,7 +8,7 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import FilterButton from "@/components/ui/buttons/FilterButton";
 import PostEditor from "./PostEditor";
 
-const BlogPostHeader = ({ posts, setPosts }) => {
+const BlogPostHeader = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const createPost = () => {
@@ -45,7 +45,7 @@ const BlogPostHeader = ({ posts, setPosts }) => {
             isModalOpen={isModalOpen}
             CloseModal={closeModal}
         >
-            <PostEditor CloseModal={closeModal} posts={posts} setPosts={setPosts} />
+            <PostEditor CloseModal={closeModal} />
         </CentralModal>
         </section>
     );

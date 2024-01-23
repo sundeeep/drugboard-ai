@@ -6,10 +6,32 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import RepeatRoundedIcon from "@mui/icons-material/RepeatRounded";
 import BookmarkAddRoundedIcon from "@mui/icons-material/BookmarkAddRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
+import { useEffect, useState } from "react";
+import { appwriteClient } from "@/appwrite";
+import Tags from "@/components/ui/buttons/Tags";
 
 const PostCard = ({ post }) => {
+    const [postData, setPostData] = useState(post);
+    useEffect(() => {
+        const unsubscribe = appwriteClient.subscribe(
+            `databases.drugboard-beta.collections.posts.documents.${post.$id}`,
+            (response) => {
+                // Callback will be executed on changes for all files.
+                console.log(response);
+                if (response?.events?.includes(`databases.*.collections.*.documents.${postData?.$id}.update`)) {
+                    setPostData(response?.payload)
+                }
+            }
+        ); 
+        
+        return () => {
+            unsubscribe();
+        }
+    }, [])
+    
     const date = new Date(post.$updatedAt);
     return (
+        postData &&
         <article className="bg-white/70 border rounded-lg shadow-sm">
             <div className="flex">
                 {/* Left Image */}
@@ -31,7 +53,7 @@ const PostCard = ({ post }) => {
                                 className="w-[50px] h-[70px] object-cover rounded-[4px] mt-1"
                             />
                             <p className="text-[18px] w-[80%] break-words font-bold text-[#0F172A]/90">
-                                {post?.postTitle}
+                                {postData?.postTitle}
                             </p>
                         </div>
                         <div className="flex items-center justify-between mb-2">
@@ -47,15 +69,15 @@ const PostCard = ({ post }) => {
                         </div>
                         {/* Text Content */}
                         <pre className="text-sm font-medium h-[190px] text-[#334155] overflow-y-auto w-full break-words whitespace-pre-wrap">
-                        {post?.postContent}
+                        {postData?.postContent}
                         </pre>
                     </div>
                     <div>
                         {/* Tags */}
                         <div className="flex gap-[8px] px-[16px] py-[8px] items-center">
-                        {/* {post.tags.map((tag, index) => (
-                            <Tags key={index}>{tag}</Tags>
-                        ))} */}
+                        {postData?.postTags?.map((tag, index) => (
+                            <Tags key={index}>{tag?.tagName}</Tags>
+                        ))} 
                         <button className="rounded-full bg-gradient-to-r from-[#FAF5FF] to-[#FDF4FF] w-[22px] h-[22px] flex items-center justify-center">
                             <MoreVertRoundedIcon className="text-[16px] font-[600] text-[#0F172A]/60" />
                         </button>
@@ -65,7 +87,7 @@ const PostCard = ({ post }) => {
                         <button className="flex items-center gap-2 border border-[#7E22CE]/80 py-[3px] px-[12px] rounded-full">
                             <ThumbUpAltRoundedIcon className="text-[#7E22CE]" />
                             <p className="text-[12px] font-[600] text-[#7E22CE]">
-                            {post?.likes}
+                            {postData?.likes?.length}
                             </p>
                         </button>
                         <button className="flex items-center gap-2 border border-[#1E293B] py-[3px] px-[12px] rounded-full">

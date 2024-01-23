@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import AppWriteDB from "../../appwrite/database.service";
 import { useState } from "react";
 
-const PostEditor = ({ CloseModal, posts, setPosts }) => {
+const PostEditor = ({ CloseModal }) => {
   const [postTitle, setPostTitle] = useState();
   const [postContent, setPostContent] = useState();
 
@@ -14,16 +14,8 @@ const PostEditor = ({ CloseModal, posts, setPosts }) => {
       postContent,
     };
     const post = await db.createDoc("drugboard-beta", "posts", payload);
-    // console.log("Post Editor: ", post)
-    if (post) {
-      const sortedPosts = [...posts, post].sort((a, b) =>
-        b.$updatedAt
-          .toLocaleString()
-          .localeCompare(a.$updatedAt.toLocaleString())
-      );
-      setPosts(sortedPosts);
-      CloseModal();
-    }
+    
+    CloseModal();
   };
 
   return (
