@@ -52,7 +52,7 @@ const Header = ({ currentUserData}) => {
         {/* Notifications and User Profile */}
         <div className="flex items-center gap-2 px-3">
           <button>
-            <NotificationsActiveRoundedIcon className="text-[#334155] text-[32px]" />
+            <NotificationsActiveRoundedIcon className="text-[#334155]" />
           </button>
           {/* User Profile or SignIn With Google Button*/}
           <ProfileCard currentUserData={ currentUserData}/>
@@ -60,7 +60,7 @@ const Header = ({ currentUserData}) => {
           
           <PrimaryButton
             onClick={handleSignIn}
-            icon={<VpnKeyRoundedIcon className="text-[16px]" />}
+            icon={<VpnKeyRoundedIcon  />}
           >
             Sign In
           </PrimaryButton>

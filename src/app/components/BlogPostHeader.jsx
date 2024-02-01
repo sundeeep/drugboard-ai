@@ -25,16 +25,16 @@ const BlogPostHeader = () => {
         <section className="bg-[#F1F5F9] rounded-t-lg px-[16px] py-[8px] shadow-md sticky top-0 z-10 border-b">
         <div className="flex items-center justify-between">
             <FilterButton
-            starticon={<FilterAltRoundedIcon className="text-[14px]" />}
+            starticon={<FilterAltRoundedIcon  />}
             endicon={
-                <KeyboardDoubleArrowDownRoundedIcon className="text-[14px]" />
+                <KeyboardDoubleArrowDownRoundedIcon  />
             }
             >
             Posts
             </FilterButton>
             <PrimaryButton
             onClick={createPost}
-            icon={<AddCircleRoundedIcon className="text-[16px]" />}
+            icon={<AddCircleRoundedIcon  />}
             >
             Create Post
             </PrimaryButton>

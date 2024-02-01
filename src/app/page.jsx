@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 import AppWriteAuth from "@/appwrite/auth.service";
 import { useRouter } from "next/navigation";
+
 const Home = () => {
   const auth = new AppWriteAuth();
   const [currentUserData, setCurrentUserData] = useState(null);

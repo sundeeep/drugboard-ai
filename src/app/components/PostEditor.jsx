@@ -1,3 +1,4 @@
+"use client"
 import { Button } from "@mui/material";
 import AppWriteDB from "../../appwrite/database.service";
 import { useState } from "react";

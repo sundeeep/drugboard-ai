@@ -1,35 +1,29 @@
-import React from 'react'
+"use client"
+import { useEffect, useState } from 'react'
 import PostCard from './PostCard'
 import AppWriteDB from '@/appwrite/database.service';
 import BlogPostHeader from './BlogPostHeader';
 import { appwriteClient } from "@/appwrite";
 
 const PostContainer = () => {
-    const [posts, setPosts] = React.useState(null);
+    const [posts, setPosts] = useState(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
       fetchPostsData();
-      const unsubscribe = appwriteClient.subscribe(
+      appwriteClient.subscribe(
         `databases.drugboard-beta.collections.posts.documents`,
         (response) => {
-          if (
-            response?.events?.includes(
-              "databases.*.collections.*.documents.*.create"
-            )
-          ) {
-            console.log(response?.payload);
-            posts && setPosts((previousState) => [
-              response?.payload,
-              ...previousState,
-            ]);
+          if (response?.events?.includes("databases.*.collections.*.documents.*.create")) {
+            // console.log(response?.payload);
+            // setPosts((previousState) => [
+            //   response?.payload,
+            //   ...previousState,
+            // ]);
+            window.location.reload();
           }
         }
       );
-
-      return () => {
-        unsubscribe();
-      };
-      }, []);
+    }, []);
 
     const fetchPostsData = async () => {
       const db = new AppWriteDB();
