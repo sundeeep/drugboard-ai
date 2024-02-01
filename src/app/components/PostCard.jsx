@@ -17,7 +17,6 @@ const PostCard = ({ post }) => {
             `databases.drugboard-beta.collections.posts.documents.${post.$id}`,
             (response) => {
                 // Callback will be executed on changes for all files.
-                console.log(response);
                 if (response?.events?.includes(`databases.*.collections.*.documents.${postData?.$id}.update`)) {
                     setPostData(response?.payload)
                 }

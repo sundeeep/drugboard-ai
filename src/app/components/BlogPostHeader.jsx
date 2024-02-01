@@ -8,7 +8,7 @@ import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 import FilterButton from "@/components/ui/buttons/FilterButton";
 import PostEditor from "./PostEditor";
 
-const BlogPostHeader = ({ postsLenght }) => {
+const BlogPostHeader = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const createPost = () => {
@@ -30,7 +30,6 @@ const BlogPostHeader = ({ postsLenght }) => {
                 >
                     Posts
                 </FilterButton>
-                {postsLenght && <p>Number of Posts: {postsLenght}</p>}
                 <PrimaryButton onClick={createPost} icon={<AddCircleRoundedIcon />}>
                     Create Post
                 </PrimaryButton>
