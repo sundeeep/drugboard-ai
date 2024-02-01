@@ -14,7 +14,7 @@ const Home = () => {
     const getUserData = async () => {
       try {
         const user = await auth.getUser();
-        user && console.log(user);
+        // user && console.log(user);
         setCurrentUserData(user);
       } catch (err) {
         if (err.response) {

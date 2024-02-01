@@ -16,7 +16,7 @@ class AppWriteDB {
         ID.unique(),
         PAYLOAD
       );
-      console.log(response);
+      //console.log(response);
       return response;
     } catch (error) {
       console.log("ERROR in getAllDocs():: ", error.response);
@@ -27,7 +27,7 @@ class AppWriteDB {
   async getAllDocs(DB_ID, COLLECTION_ID) {
     try {
       const response = await this.db.listDocuments(DB_ID, COLLECTION_ID);
-      console.log(response);
+      //console.log(response);
       if (response.total > 0) return response.documents;
     } catch (error) {
       console.log("ERROR in getAllDocs():: ", error.response);
@@ -38,7 +38,7 @@ class AppWriteDB {
   async getAllDocsByDesc(DB_ID, COLLECTION_ID) {
     try {
       const response = await this.db.listDocuments(DB_ID, COLLECTION_ID, [Query.orderDesc('$createdAt')]);
-      console.log(response);
+      //console.log(response);
       if (response.total > 0) return response.documents;
     } catch (error) {
       console.log("ERROR in getAllDocs():: ", error.response);
@@ -49,7 +49,7 @@ class AppWriteDB {
   async getAllDocsByAsc(DB_ID, COLLECTION_ID) {
     try {
       const response = await this.db.listDocuments(DB_ID, COLLECTION_ID, [Query.orderAsc('$createdAt')]);
-      console.log(response);
+      //console.log(response);
       if (response.total > 0) return response.documents;
     } catch (error) {
       console.log("ERROR in getAllDocs():: ", error.response);
@@ -60,7 +60,7 @@ class AppWriteDB {
   async getDoc(DB_ID, COLLECTION_ID, DOC_ID) {
     try {
       const response = await this.db.getDocument(DB_ID, COLLECTION_ID, DOC_ID);
-      console.log(response);
+      //console.log(response);
       return response;
     } catch (error) {
       console.log("ERROR in getDoc():: ", error.response);
@@ -76,7 +76,7 @@ class AppWriteDB {
         DOC_ID,
         PAYLOAD
       );
-      console.log(response);
+      //console.log(response);
       return response;
     } catch (error) {
       console.log("ERROR in updateDoc():: ", error.response);
@@ -92,7 +92,7 @@ class AppWriteDB {
         DOC_ID,
         PAYLOAD
       );
-      console.log(response);
+      //console.log(response);
       return response;
     } catch (error) {
       console.log("ERROR in deleteDoc():: ", error.response);

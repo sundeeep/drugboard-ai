@@ -1,6 +1,6 @@
 "use client"
 
-import PostContainer from "./PostContainer";
+import PostContainer from "./PostsContent";
 import Header from "./Header";
 import Leaderboard from "./Leaderboard";
 import AdsCard from "./AdsCard";
