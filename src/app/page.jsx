@@ -14,7 +14,7 @@ const Home = () => {
     const getUserData = async () => {
       try {
         const user = await auth.getUser();
-        // user && console.log(user);
+        user && console.log(user);
         setCurrentUserData(user);
       } catch (err) {
         if (err.response) {
@@ -27,8 +27,14 @@ const Home = () => {
   return (
     <StyledEngineProvider injectFirst>
       <div className="h-screen w-screen bg-[#0F172A] lg:h-screen lg:w-screen flex items-start justify-between gap-3 p-3">
-        <Aside />
-        <MainSection currentUserData={currentUserData} />
+        <Aside
+          currentUserData={currentUserData}
+          setCurrentUserData={setCurrentUserData}
+        />
+        <MainSection
+          currentUserData={currentUserData}
+          setCurrentUserData={setCurrentUserData}
+        />
       </div>
       <ToastContainer />
     </StyledEngineProvider>

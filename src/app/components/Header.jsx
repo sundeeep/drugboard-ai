@@ -8,26 +8,26 @@ import AppWriteAuth from "@/appwrite/auth.service";
 import ProfileCard from "./ProfileCard";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
 
-const Header = ({ currentUserData}) => {
+const Header = ({setCurrentUserData, currentUserData}) => {
   const [logInLoader, setLogInLoader] = useState(false);
   const appwrite = new AppWriteAuth();
   
-  
-
     const handleSignIn = async () => {
         setLogInLoader(true);
         const response = await appwrite.SignInWithGoogle(
             `http://localhost:3000/`,
             "http://localhost:3000/"
         );
-        if (response) {
-          const user = await appwrite.getUser();
-          console.log(user);
-            if (user) {
+      if (response) {
+        const user = await appwrite.getUser();
+        console.log(user);
+        if (user) {
+            setCurrentUserData(user);
             setLogInLoader(false);
-            }
         }
-    };
+      }
+  };
+  
     return (
       <header className="h-[12%] flex items-center justify-between text-white font-semibold bg-white rounded-tr-md rounded-tl-md border border-b-[#CBD5E1]">
         <div className="px-3">
@@ -54,16 +54,14 @@ const Header = ({ currentUserData}) => {
           <button>
             <NotificationsActiveRoundedIcon className="text-[#334155]" />
           </button>
-          {/* User Profile or SignIn With Google Button*/}
-          <ProfileCard currentUserData={ currentUserData}/>
-
           
-          <PrimaryButton
-            onClick={handleSignIn}
-            icon={<VpnKeyRoundedIcon  />}
-          >
-            Sign In
-          </PrimaryButton>
+
+          {currentUserData ? 
+            <ProfileCard currentUserData={currentUserData} />:
+            <PrimaryButton onClick={handleSignIn} icon={<VpnKeyRoundedIcon />}>
+              Sign In
+            </PrimaryButton>
+          }
         </div>
       </header>
     );

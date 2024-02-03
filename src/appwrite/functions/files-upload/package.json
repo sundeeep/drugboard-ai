@@ -1,0 +1,17 @@
+{
+  "name": "files-upload",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Appwrite Functions to upload files (pdfs, docx and ppts)",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep K. Dasari",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.0.0",
+    "multer": "^1.4.5-lts.1",
+    "node-appwrite": "^11.1.0"
+  }
+}

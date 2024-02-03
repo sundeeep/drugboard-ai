@@ -9,6 +9,7 @@ import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
 import { useEffect, useState } from "react";
 import { appwriteClient } from "@/appwrite";
 import Tags from "@/components/ui/buttons/Tags";
+import moment from "moment";
 
 const PostCard = ({ post }) => {
     const [postData, setPostData] = useState(post);
@@ -28,7 +29,8 @@ const PostCard = ({ post }) => {
         }
     }, [])
     
-    const date = new Date(post.$updatedAt);
+    let date = new Date(post.$updatedAt);
+    date = moment(date).format("Do MMM, YYYY - h:mm:ss a");
     return (
         postData &&
         <article className="bg-white/70 border rounded-lg shadow-sm">
