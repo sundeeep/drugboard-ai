@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import AppWriteAuth from "@/appwrite/auth.service";
 import ProfileCard from "./ProfileCard";
 import PrimaryButton from "@/components/ui/buttons/PrimaryButton";
+import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 
 const Header = ({setCurrentUserData, currentUserData}) => {
   const [logInLoader, setLogInLoader] = useState(false);
@@ -29,7 +30,7 @@ const Header = ({setCurrentUserData, currentUserData}) => {
   };
   
     return (
-      <header className="h-[12%] flex items-center justify-between text-white font-semibold bg-white rounded-tr-md rounded-tl-md border border-b-[#CBD5E1]">
+      <header className="h-[10%] flex items-center justify-between text-white font-semibold bg-white rounded-tr-md rounded-tl-md border border-b-[#CBD5E1]">
         <div className="px-3">
           <h3 className="text-[#C026D3] font-bold text-2xl">
             Scientific Connect
@@ -54,14 +55,25 @@ const Header = ({setCurrentUserData, currentUserData}) => {
           <button>
             <NotificationsActiveRoundedIcon className="text-[#334155]" />
           </button>
-          
 
-          {currentUserData ? 
-            <ProfileCard currentUserData={currentUserData} />:
-            <PrimaryButton onClick={handleSignIn} icon={<VpnKeyRoundedIcon />}>
-              Sign In
-            </PrimaryButton>
-          }
+          {currentUserData ? (
+            <ProfileCard currentUserData={currentUserData} />
+          ) : (
+            <div className="flex items-center gap-2">
+              <PrimaryButton
+                onClick={handleSignIn}
+                icon={<VpnKeyRoundedIcon />}
+              >
+                Sign In
+              </PrimaryButton>
+              <SecondaryButton
+                onClick={handleSignIn}
+                icon={<VpnKeyRoundedIcon />}
+              >
+                Register
+              </SecondaryButton>
+            </div>
+          )}
         </div>
       </header>
     );
