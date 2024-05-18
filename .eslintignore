@@ -1,3 +1,2 @@
-/src/appwrite/functions/users/*.js
-/src/appwrite/functions/*.js
+/src/appwrite/functions/users/listAllUsers/*.js
 /src/redux-store/*.js
