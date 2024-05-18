@@ -77,8 +77,12 @@ class AppWriteAuth {
     }
 
     async getUser() {
-        const response = await this.auth.get();
-        return response;
+        try {
+            const response = await this.auth.get();
+            return response;
+        } catch (err) {
+            return err;
+        }
     }
 
     async getCurrentUserSession() {

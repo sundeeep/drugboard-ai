@@ -22,27 +22,27 @@ const BlogPostHeader = () => {
     };
 
     return (
-        <section className="bg-[#F1F5F9] rounded-t-lg px-[16px] py-[8px] shadow-md sticky top-0 z-10 border-b">
-            <div className="flex items-center justify-between">
-                <FilterButton
-                    starticon={<FilterAltRoundedIcon />}
-                    endicon={<KeyboardDoubleArrowDownRoundedIcon />}
-                >
-                    Posts
-                </FilterButton>
-                <PrimaryButton onClick={createPost} icon={<AddCircleRoundedIcon />}>
-                    Create Post
-                </PrimaryButton>
-            </div>
+      <section className="bg-[#ECFDF5] rounded-t-lg px-[16px] py-[8px] shadow-sm sticky top-0 z-10 border-b border-[#6EE7B7]">
+        <div className="flex items-center justify-between">
+          <FilterButton
+            starticon={<FilterAltRoundedIcon />}
+            endicon={<KeyboardDoubleArrowDownRoundedIcon />}
+          >
+            Posts
+          </FilterButton>
+          <PrimaryButton onClick={createPost} icon={<AddCircleRoundedIcon />}>
+            Create Post
+          </PrimaryButton>
+        </div>
 
-            <CentralModal
-                modalTitle={"Create A New Post"}
-                isModalOpen={isModalOpen}
-                CloseModal={closeModal}
-            >
-                <PostEditor CloseModal={closeModal} />
-            </CentralModal>
-        </section>
+        <CentralModal
+          modalTitle={"Create A New Post"}
+          isModalOpen={isModalOpen}
+          CloseModal={closeModal}
+        >
+          <PostEditor CloseModal={closeModal} />
+        </CentralModal>
+      </section>
     );
 };
 

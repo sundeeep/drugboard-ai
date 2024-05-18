@@ -1,0 +1,12 @@
+{
+  "name": "listallusers",
+  "version": "1.0.0",
+  "description": "List All the authenticated used in drugboard app",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sandeep K Dasari",
+  "license": "ISC"
+}

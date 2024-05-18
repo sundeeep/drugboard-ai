@@ -11,20 +11,25 @@ import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 
 const Header = ({setCurrentUserData, currentUserData}) => {
   const [logInLoader, setLogInLoader] = useState(false);
-  const appwrite = new AppWriteAuth();
+  const auth = new AppWriteAuth();
   
     const handleSignIn = async () => {
         setLogInLoader(true);
-        const response = await appwrite.SignInWithGoogle(
+        const response = await auth.SignInWithGoogle(
             `http://localhost:3000/`,
             "http://localhost:3000/"
         );
       if (response) {
-        const user = await appwrite.getUser();
-        console.log(user);
-        if (user) {
+        try {
+          const user = await auth.getUser();
+          console.log(user);
+          if (user) {
             setCurrentUserData(user);
-            setLogInLoader(false);
+            console.log(user);
+              setLogInLoader(false);
+          }
+        } catch (err) {
+          console.log("Error");
         }
       }
   };
@@ -32,7 +37,7 @@ const Header = ({setCurrentUserData, currentUserData}) => {
     return (
       <header className="h-[10%] flex items-center justify-between text-white font-semibold bg-white rounded-tr-md rounded-tl-md border border-b-[#CBD5E1]">
         <div className="px-3">
-          <h3 className="text-[#C026D3] font-bold text-2xl">
+          <h3 className="text-[#C026D3] text-xl font-semibold">
             Scientific Connect
           </h3>
         </div>
@@ -46,6 +51,7 @@ const Header = ({setCurrentUserData, currentUserData}) => {
             id="search"
             type="search"
             className="flex-1 outline-none border-0 text-[#334155]"
+            placeholder="Search for Posts, Tags, Scientist & Many more..."
             required
           />
         </form>

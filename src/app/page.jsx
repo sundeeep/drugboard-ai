@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 const Home = () => {
   const auth = new AppWriteAuth();
   const [currentUserData, setCurrentUserData] = useState(null);
+  
   useEffect(() => {
     const getUserData = async () => {
       try {
@@ -23,7 +24,8 @@ const Home = () => {
       }
     };
     getUserData();
-  },[]);
+  }, []);
+  
   return (
     <StyledEngineProvider injectFirst>
       <div className="h-screen w-screen bg-[#0F172A] lg:h-screen lg:w-screen flex items-start justify-between gap-3 p-3">

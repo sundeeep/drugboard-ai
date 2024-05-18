@@ -43,12 +43,11 @@ const PostsContent = () => {
   };
 
   return (
-    <section className="w-[70%] bg-white border border-[#CBD5E1] rounded-md shadow-sm flex flex-col h-full">
+    <section className="w-[70%] bg-white border border-[#6EE7B7] rounded-md shadow-sm flex flex-col h-full">
       {/* Filters and Create Button */}
       <BlogPostHeader />
       {/* Posts & Blogs Listing Container */}
       <PostsContainer posts={posts} />
-      
     </section>
   );
 };

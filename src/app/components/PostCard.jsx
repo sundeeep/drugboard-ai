@@ -34,10 +34,14 @@ const PostCard = ({ post }) => {
     const postDate = date.toLocaleString();
 
     return (
-        postData &&
-        <article>
-                <h1>{postData?.postTitle}</h1>
-        </article>
+        postData && (
+            <article className="w-full h-[800px] border rounded-md flex gap-0 items-stretch">
+                    <div className="  h-full border w-[40%] aspect-[4/5] flex items-center justify-center">
+                        <p className="font-bold text-xl">Image Here</p>
+                </div>
+                <div className=" h-full w-[60%]">sdfsdf</div>
+            </article>
+        )
     );
 };
 
