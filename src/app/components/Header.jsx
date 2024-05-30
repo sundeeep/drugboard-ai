@@ -58,8 +58,8 @@ const Header = ({setCurrentUserData, currentUserData}) => {
 
         {/* Notifications and User Profile */}
         <div className="flex items-center gap-2 px-3">
-          <button>
-            <NotificationsActiveRoundedIcon className="text-[#334155]" />
+          <button className="">
+            <NotificationsActiveRoundedIcon className="text-[#334155] hover:animate-bounce ease-in-out transition-all" />
           </button>
 
           {currentUserData ? (

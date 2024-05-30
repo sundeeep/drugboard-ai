@@ -1,7 +1,7 @@
 "use client"
 const ProfileCard = ({ currentUserData }) => {
   return (
-    <article className="rounded-lg flex gap-[14px] items-center">
+    <article className="cursor-pointer border-2 rounded-lg flex gap-1 hover:bg-[#D1FAE5] hover:animate-pulse ease-in-out transition-all items-center">
       {currentUserData && currentUserData?.prefs?.profileImageURL ? (
         <img
           src={currentUserData?.prefs?.profileImageURL}
@@ -16,7 +16,7 @@ const ProfileCard = ({ currentUserData }) => {
         />
       )}
 
-      <div className="flex flex-col ">
+      <div className="flex flex-col p-2">
         <p className="text-[14px] text-[#0F172A] font-semibold">
           {currentUserData
             ? currentUserData?.prefs?.displayName
@@ -25,7 +25,10 @@ const ProfileCard = ({ currentUserData }) => {
             : `Loading...`}
         </p>
         <p className="text-[12px] text-[#0F172A]/60 font-medium">
-          {currentUserData?currentUserData?.prefs?.resignation&&currentUserData?.prefs?.resignation:`Loading...`}
+          {currentUserData
+            ? currentUserData?.prefs?.resignation &&
+              currentUserData?.prefs?.resignation
+            : `Loading...`}
         </p>
       </div>
     </article>
