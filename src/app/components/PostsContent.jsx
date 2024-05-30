@@ -40,6 +40,7 @@ const PostsContent = () => {
     const db = new AppWriteDB();
     const postsData = await db.getAllDocsByDesc("drugboard-beta", "posts");
     postsData?.length > 0 && setPosts(postsData);
+    postsData?.length > 0 && console.log(postsData);
   };
 
   return (

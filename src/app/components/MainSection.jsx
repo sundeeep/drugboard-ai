@@ -18,8 +18,8 @@ const MainSection = ({setCurrentUserData, currentUserData }) => {
       <main className="h-[90%] bg-white flex-1 rounded-bl-md rounded-br-md flex gap-3 p-3">
         <PostContainer />
         <section className="w-[30%] flex flex-col basis-1/3 gap-3 h-full">
-          <AdsCard />
-          <Leaderboard />
+          {/* <AdsCard />
+          <Leaderboard /> */}
         </section>
       </main>
     </div>

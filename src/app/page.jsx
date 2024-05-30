@@ -6,25 +6,42 @@ import { ToastContainer } from "react-toastify";
 import { useEffect, useState } from "react";
 import AppWriteAuth from "@/appwrite/auth.service";
 import { useRouter } from "next/navigation";
+import CentralModal from "@/components/ui/modals/CentralModal";
+import UserEditor from "./components/UserEditor";
 
 const Home = () => {
-  const auth = new AppWriteAuth();
   const [currentUserData, setCurrentUserData] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModal = () => {
+    if (isModalOpen) setIsModalOpen(false);
+    return;
+  };
   
   useEffect(() => {
+    const auth = new AppWriteAuth();
     const getUserData = async () => {
       try {
-        const user = await auth.getUser();
-        user && console.log(user);
-        setCurrentUserData(user);
+        const user = await auth.getCurrentUserSession();
+        if (user) {
+          const userData = await auth.getUser();
+          setCurrentUserData(userData);
+        }
       } catch (err) {
         if (err.response) {
-          console.log(err.response)
+          console.log(err.response);
         }
       }
     };
     getUserData();
   }, []);
+
+  useEffect(() => {
+    if (!currentUserData?.prefs?.userName || !currentUserData?.prefs?.displayName|| !currentUserData?.prefs?.resignation||!currentUserData?.prefs?.profileImageURL||!currentUserData?.prefs?.profileImageID) {
+      // console.log(currentUserData.prefs);
+      if (!isModalOpen) setIsModalOpen(true);
+    }
+  }, [currentUserData]);
   
   return (
     <StyledEngineProvider injectFirst>
@@ -37,7 +54,20 @@ const Home = () => {
           currentUserData={currentUserData}
           setCurrentUserData={setCurrentUserData}
         />
+        {currentUserData && (
+          <CentralModal
+            modalTitle={`💐 Welcome! ${currentUserData?.name} 💐 `}
+            isModalOpen={isModalOpen}
+            CloseModal={closeModal}
+          >
+            <UserEditor
+              CloseModal={closeModal}
+              currentUserData={currentUserData}
+            />
+          </CentralModal>
+        )}
       </div>
+
       <ToastContainer />
     </StyledEngineProvider>
   );

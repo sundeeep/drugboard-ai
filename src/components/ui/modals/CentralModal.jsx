@@ -7,9 +7,9 @@ const CentralModal = ({ children, modalTitle, isModalOpen, CloseModal }) => {
         <div className={styles.modalContainer}>
             <header className="flex justify-between items-center p-3">
             <h1 className=" text-gray-700 text-xl font-semibold">{modalTitle}</h1>
-            <IconButton onClick={CloseModal}>
+            {CloseModal && <IconButton onClick={CloseModal}>
                 <CancelRoundedIcon className="text-xl text-red-500" />
-            </IconButton>
+            </IconButton>}
             </header>
             <hr className="border-t border-gray-400" />
             {children}

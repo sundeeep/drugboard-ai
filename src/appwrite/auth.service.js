@@ -99,6 +99,10 @@ class AppWriteAuth {
         const response = await this.auth.createVerification(URL);
         return response;
     }
+    async updatePrefs(prefs) {
+        const response = await this.auth.updatePrefs(prefs)
+        return response;
+    }
 }
 
 export default AppWriteAuth;

@@ -36,7 +36,7 @@ const BlogPostHeader = () => {
         </div>
 
         <CentralModal
-          modalTitle={"Create A New Post"}
+          modalTitle={" ✍ Write A New Post"}
           isModalOpen={isModalOpen}
           CloseModal={closeModal}
         >

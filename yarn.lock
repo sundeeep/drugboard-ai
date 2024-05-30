@@ -450,6 +450,185 @@
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.11.8.tgz"
   integrity sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==
 
+"@progress/kendo-draggable-common@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.npmjs.org/@progress/kendo-draggable-common/-/kendo-draggable-common-0.2.3.tgz"
+  integrity sha512-e1FraFsT7zwevswzZlQYL//K+fzmRUvkr/4emp51dzkARLDtGd95BtPNSoXYRG5xYHeueKBS75hzVwQI6Dm3Dg==
+  dependencies:
+    tslib "^1.7.0"
+
+"@progress/kendo-drawing@^1.17.0", "@progress/kendo-drawing@^1.20.1":
+  version "1.20.1"
+  resolved "https://registry.npmjs.org/@progress/kendo-drawing/-/kendo-drawing-1.20.1.tgz"
+  integrity sha512-1ihKFZ7vMrqaIPlmXooYWm0/nDvrGWvh0Y1AkRhI1OmfzuvLkEFOUG+MgQgg+/P421RV1hhAWPtd8JER/MwDHQ==
+  dependencies:
+    "@progress/pako-esm" "^1.0.1"
+
+"@progress/kendo-editor-common@1.11.4":
+  version "1.11.4"
+  resolved "https://registry.npmjs.org/@progress/kendo-editor-common/-/kendo-editor-common-1.11.4.tgz"
+  integrity sha512-vUTVu4ufG90vlOsfTgDuYDP2d4W2AU+wFp8lizSe4NIPEc1YWdm/wDOAJpiQpXr+FIZsBO9mIW7c2m8mK7JFMg==
+  dependencies:
+    prosemirror-commands "1.5.2"
+    prosemirror-dropcursor "1.8.1"
+    prosemirror-gapcursor "1.3.2"
+    prosemirror-history "1.4.0"
+    prosemirror-inputrules "1.4.0"
+    prosemirror-keymap "1.2.2"
+    prosemirror-model "1.21.0"
+    prosemirror-schema-list "1.3.0"
+    prosemirror-state "1.4.3"
+    prosemirror-tables "1.3.7"
+    prosemirror-transform "1.9.0"
+    prosemirror-view "1.33.6"
+    tslib "^2.4.0"
+
+"@progress/kendo-file-saver@^1.0.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@progress/kendo-file-saver/-/kendo-file-saver-1.1.1.tgz"
+  integrity sha512-mo0Cw3MLoLcx2bA+Ma/VAxkM9vHSJ4Sg0vgh6U1ZIvPXmnfO8Dgsdiv/475lafyju0kG8KOhl3bcVagCF71glQ==
+
+"@progress/kendo-inputs-common@^3.1.0":
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/@progress/kendo-inputs-common/-/kendo-inputs-common-3.1.1.tgz"
+  integrity sha512-OqID8+2DuAnUET0W1j357qqTPvws6hnByt2h5+uVS7uK9Wmt/NHA0gVhdYmh+Jyv6Pw+S2epSk47mDsfyreKYA==
+  dependencies:
+    tslib "^2.3.1"
+
+"@progress/kendo-intl@^3.1.1":
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/@progress/kendo-intl/-/kendo-intl-3.1.2.tgz"
+  integrity sha512-rOtMppQSrScwryMfeQSOdsnRi9Oj1l08HFoEC2ticZ0T2N0/JN9CHt+fuToRx5onXK7QkcbbuNM0D09o8TeeMw==
+
+"@progress/kendo-licensing@^1.3.4", "@progress/kendo-licensing@^1.3.5":
+  version "1.3.5"
+  resolved "https://registry.npmjs.org/@progress/kendo-licensing/-/kendo-licensing-1.3.5.tgz"
+  integrity sha512-HWxM6Ov1g0LvOQN9sp+3N1h+YpF0OKq7rWW2bqoJnkyHy8woC8Ve6ew6KmHdbeaKMgikVOYgyo5NTjef2j+gVQ==
+  dependencies:
+    jsonwebtoken "^9.0.2"
+
+"@progress/kendo-popup-common@^1.9.0":
+  version "1.9.2"
+  resolved "https://registry.npmjs.org/@progress/kendo-popup-common/-/kendo-popup-common-1.9.2.tgz"
+  integrity sha512-Gs50UafJcERiGuSP/47Yg7ftPX3HQXiK5M9zHB8sHSoc1/AEYd0/Sj5wh8UrVVBAM9b0pUTwmEuzQ/D5yDDd2Q==
+
+"@progress/kendo-react-animation@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-animation/-/kendo-react-animation-8.0.0.tgz"
+  integrity sha512-hdPonoenqxlchRXtEFIsuhzCgnwLeWTGXeRxx4+rcDgCEq3kuwqZjdBLb8q4KhIgp/rRnolaZZVgSXwgKURw9g==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-buttons@^8.0.0", "@progress/kendo-react-buttons@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-buttons/-/kendo-react-buttons-8.0.0.tgz"
+  integrity sha512-0S17gUDm54YT8Moypf742I4bsx86eC2/OwcSzV4DO1fLX7kzLsFoeRKSS0NNU3OKwJDS6ohx+cRgcrYMPXZBIw==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-common@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-common/-/kendo-react-common-8.0.0.tgz"
+  integrity sha512-pCh8ATEeZApEAK1CKEsajGUhgC7BBWhESu5D98HSi7dfHN7ldMnCyN1SxjRpdcOWwNln42U60rKiBD8bStLOLw==
+  dependencies:
+    "@progress/kendo-draggable-common" "^0.2.3"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-dialogs@^8.0.0", "@progress/kendo-react-dialogs@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-dialogs/-/kendo-react-dialogs-8.0.0.tgz"
+  integrity sha512-Im4kKj5D3VYUb3L24AG90bO2v50VAVr0I9dK0Hg4QL2MicucuB3PlQ1L8Dmfwa9MpRKW8RM+PKjusyGV2eyohw==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-dropdowns@^8.0.0", "@progress/kendo-react-dropdowns@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-dropdowns/-/kendo-react-dropdowns-8.0.0.tgz"
+  integrity sha512-mVgpsuF+feijRD4i0mU9vC6/u491ZVrrS+XVyttERqRdouDxaSEKuQGtRnvqhOl4V4Knv54WXF+V1DQgLzhIJg==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-editor@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-editor/-/kendo-react-editor-8.0.0.tgz"
+  integrity sha512-h7ncZeZRot2r07Sudv1gSI4xpIWYjubedlHkLgMCB47D4SN1dhQEurjGZ6Y7yxUu+qWCikBM+EkAe7v5ULMDbg==
+  dependencies:
+    "@progress/kendo-editor-common" "1.11.4"
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-form@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-form/-/kendo-react-form-8.0.0.tgz"
+  integrity sha512-YTFBIVTQR8laTOmoKjenrGoPymosCZCRFkuhv6xwRAbUmIO74ObjTjTKpxxp2IC5IShWY4uZDNUm9HZ5urcriQ==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-inputs@^8.0.0", "@progress/kendo-react-inputs@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-inputs/-/kendo-react-inputs-8.0.0.tgz"
+  integrity sha512-O3Pgy/+vLYOtKUJiHbAoappbNuON2HUgDvSQV2qB1OWwJMPA4CdSkFTXGuyYUGxOHfL4EURX+cvaHp9+IDoRLg==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-intl@^8.0.0", "@progress/kendo-react-intl@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-intl/-/kendo-react-intl-8.0.0.tgz"
+  integrity sha512-cbZRplIDUyzCa733n+c9GgnWGTCzlULadeb/4DimfOdJSeo0BfzJEJnMol1kh5FBfp889SWXSRm6/lkNl4/D5g==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-labels@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-labels/-/kendo-react-labels-8.0.0.tgz"
+  integrity sha512-tC+MQiWVqF1xxDAXJvnhJ8G/sR1fKwOfOMrEkazwkwUocXMwtOTiHaz8s0PnJFfMO0yJE41ugO1ExWo9CPjM1g==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-layout@^8.0.0", "@progress/kendo-react-layout@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-layout/-/kendo-react-layout-8.0.0.tgz"
+  integrity sha512-rMpk0+WosJp3cKB8nli3I6HDa5QkkUYUNV1USG6p3psOnmSPpxFExT5JMH8D0zsZ22NFZKJqQvsdJ9ItsI3WPw==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-pdf@^8.0.0", "@progress/kendo-react-pdf@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-pdf/-/kendo-react-pdf-8.0.0.tgz"
+  integrity sha512-8FZ6HOVCp9X9skmk0UgACyxchpi6Pf7gLq7FQmPC3EAvS5sn3tvpfSOoBGIVq0Q3CzJa1bSBCyAc/VbtYdtI4w==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-popup@^8.0.0", "@progress/kendo-react-popup@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-popup/-/kendo-react-popup-8.0.0.tgz"
+  integrity sha512-0p+zvYVSTdnmhfJKK8jTwNrRCkd4RDqXk2r7n2pLTUiVnWb1hpq3aBMRVhGhCLK3dPWZK3iAyyCxXodHi0Q2HA==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-progressbars@^8.0.0", "@progress/kendo-react-progressbars@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-progressbars/-/kendo-react-progressbars-8.0.0.tgz"
+  integrity sha512-yMAMxdU0hzg4d/3FNay7IJ5LxUf//bwfzrzvHIRf4xW8qUsPIwXW5umuTjaKOT+6Ixm2Bn30edOC950DTRFqQQ==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-react-treeview@8.0.0":
+  version "8.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-react-treeview/-/kendo-react-treeview-8.0.0.tgz"
+  integrity sha512-o/mgrJtRSfX1i/nuecl1WALpc3HMPN5qpxRv5mv7ugjPZgfTPgXb+Mpzu6L4maciqoAwygwEV8IiuRk2vJ+OBw==
+  dependencies:
+    prop-types "^15.6.0"
+
+"@progress/kendo-svg-icons@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@progress/kendo-svg-icons/-/kendo-svg-icons-3.0.0.tgz"
+  integrity sha512-+Hk0YWhxd9rIvFNX6T+L0P2x9/DJ8Z4baHWY4xT2ntjVK9IasSPgMmfQiAfs58q3vTiyZNkmx7Yfrdg5Mqh8Aw==
+
+"@progress/pako-esm@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@progress/pako-esm/-/pako-esm-1.0.1.tgz"
+  integrity sha512-O4A3b1EuE9Xe1pC3Xz9Tcn1M/CYrL71f4y/5TXeytOVTkmkzBgYW97fYP2f+54H0e0erWRaqV/kUUB/a8Uxfbw==
+
 "@reduxjs/toolkit@^2.0.1":
   version "2.0.1"
   resolved "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-2.0.1.tgz"
@@ -852,6 +1031,11 @@ browserslist@^4.21.10, "browserslist@>= 4.21.0":
     node-releases "^2.0.14"
     update-browserslist-db "^1.0.13"
 
+buffer-equal-constant-time@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/buffer-equal-constant-time/-/buffer-equal-constant-time-1.0.1.tgz"
+  integrity sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA==
+
 busboy@1.6.0:
   version "1.6.0"
   resolved "https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz"
@@ -1149,6 +1333,13 @@ eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://registry.npmjs.org/eastasianwidth/-/eastasianwidth-0.2.0.tgz"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
+
+ecdsa-sig-formatter@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.npmjs.org/ecdsa-sig-formatter/-/ecdsa-sig-formatter-1.0.11.tgz"
+  integrity sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ==
+  dependencies:
+    safe-buffer "^5.0.1"
 
 electron-to-chromium@^1.4.601:
   version "1.4.634"
@@ -2136,6 +2327,22 @@ json5@^1.0.2:
   dependencies:
     minimist "^1.2.0"
 
+jsonwebtoken@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.npmjs.org/jsonwebtoken/-/jsonwebtoken-9.0.2.tgz"
+  integrity sha512-PRp66vJ865SSqOlgqS8hujT5U4AOgMfhrwYIuIhfKaoSCZcirrmASQr8CX7cUg+RMih+hgznrjp99o+W4pJLHQ==
+  dependencies:
+    jws "^3.2.2"
+    lodash.includes "^4.3.0"
+    lodash.isboolean "^3.0.3"
+    lodash.isinteger "^4.0.4"
+    lodash.isnumber "^3.0.3"
+    lodash.isplainobject "^4.0.6"
+    lodash.isstring "^4.0.1"
+    lodash.once "^4.0.0"
+    ms "^2.1.1"
+    semver "^7.5.4"
+
 "jsx-ast-utils@^2.4.1 || ^3.0.0", jsx-ast-utils@^3.3.5:
   version "3.3.5"
   resolved "https://registry.npmjs.org/jsx-ast-utils/-/jsx-ast-utils-3.3.5.tgz"
@@ -2145,6 +2352,23 @@ json5@^1.0.2:
     array.prototype.flat "^1.3.1"
     object.assign "^4.1.4"
     object.values "^1.1.6"
+
+jwa@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.npmjs.org/jwa/-/jwa-1.4.1.tgz"
+  integrity sha512-qiLX/xhEEFKUAJ6FiBMbes3w9ATzyk5W7Hvzpa/SLYdxNtng+gcurvrI7TbACjIXlsJyr05/S1oUhZrc63evQA==
+  dependencies:
+    buffer-equal-constant-time "1.0.1"
+    ecdsa-sig-formatter "1.0.11"
+    safe-buffer "^5.0.1"
+
+jws@^3.2.2:
+  version "3.2.2"
+  resolved "https://registry.npmjs.org/jws/-/jws-3.2.2.tgz"
+  integrity sha512-YHlZCB6lMTllWDtSPHz/ZXTsi8S00usEV6v1tjq8tOUZzw7DpSDWVXjXDre6ed1w/pd495ODpHZYSdkRTsa0HA==
+  dependencies:
+    jwa "^1.4.1"
+    safe-buffer "^5.0.1"
 
 keyv@^4.5.3:
   version "4.5.4"
@@ -2195,10 +2419,45 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.includes@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.npmjs.org/lodash.includes/-/lodash.includes-4.3.0.tgz"
+  integrity sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w==
+
+lodash.isboolean@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/lodash.isboolean/-/lodash.isboolean-3.0.3.tgz"
+  integrity sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg==
+
+lodash.isinteger@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.npmjs.org/lodash.isinteger/-/lodash.isinteger-4.0.4.tgz"
+  integrity sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA==
+
+lodash.isnumber@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.npmjs.org/lodash.isnumber/-/lodash.isnumber-3.0.3.tgz"
+  integrity sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw==
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npmjs.org/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz"
+  integrity sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==
+
+lodash.isstring@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.npmjs.org/lodash.isstring/-/lodash.isstring-4.0.1.tgz"
+  integrity sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw==
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+lodash.once@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.npmjs.org/lodash.once/-/lodash.once-4.1.1.tgz"
+  integrity sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -2332,12 +2591,7 @@ moment@^2.30.1:
   resolved "https://registry.npmjs.org/moment/-/moment-2.30.1.tgz"
   integrity sha512-uEmtNhbDOrWPFS+hdjFCBfy9f2YoyzRpwcl+DqpC6taX21FzsTLQVbMV/W7PzNSX6x/bhC1zA3c2UQ5NzH6how==
 
-ms@^2.1.1:
-  version "2.1.3"
-  resolved "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
-  integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
-
-ms@2.1.2:
+ms@^2.1.1, ms@2.1.2:
   version "2.1.2"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
@@ -2537,6 +2791,11 @@ optionator@^0.9.3:
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
 
+orderedmap@^2.0.0:
+  version "2.1.1"
+  resolved "https://registry.npmjs.org/orderedmap/-/orderedmap-2.1.1.tgz"
+  integrity sha512-TvAWxi0nDe1j/rtMcWcIj94+Ffe6n7zhow33h40SKxmsmozs6dz/e+EajymfoFcHd7sxNn8yHM8839uixMOV6g==
+
 p-limit@^3.0.2:
   version "3.1.0"
   resolved "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz"
@@ -2708,7 +2967,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.6.2, prop-types@^15.8.1:
+prop-types@^15.6.0, prop-types@^15.6.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -2716,6 +2975,112 @@ prop-types@^15.6.2, prop-types@^15.8.1:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+prosemirror-commands@1.5.2:
+  version "1.5.2"
+  resolved "https://registry.npmjs.org/prosemirror-commands/-/prosemirror-commands-1.5.2.tgz"
+  integrity sha512-hgLcPaakxH8tu6YvVAaILV2tXYsW3rAdDR8WNkeKGcgeMVQg3/TMhPdVoh7iAmfgVjZGtcOSjKiQaoeKjzd2mQ==
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-dropcursor@1.8.1:
+  version "1.8.1"
+  resolved "https://registry.npmjs.org/prosemirror-dropcursor/-/prosemirror-dropcursor-1.8.1.tgz"
+  integrity sha512-M30WJdJZLyXHi3N8vxN6Zh5O8ZBbQCz0gURTfPmTIBNQ5pxrdU7A58QkNqfa98YEjSAL1HUyyU34f6Pm5xBSGw==
+  dependencies:
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.1.0"
+    prosemirror-view "^1.1.0"
+
+prosemirror-gapcursor@1.3.2:
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/prosemirror-gapcursor/-/prosemirror-gapcursor-1.3.2.tgz"
+  integrity sha512-wtjswVBd2vaQRrnYZaBCbyDqr232Ed4p2QPtRIUK5FuqHYKGWkEwl08oQM4Tw7DOR0FsasARV5uJFvMZWxdNxQ==
+  dependencies:
+    prosemirror-keymap "^1.0.0"
+    prosemirror-model "^1.0.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-view "^1.0.0"
+
+prosemirror-history@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/prosemirror-history/-/prosemirror-history-1.4.0.tgz"
+  integrity sha512-UUiGzDVcqo1lovOPdi9YxxUps3oBFWAIYkXLu3Ot+JPv1qzVogRbcizxK3LhHmtaUxclohgiOVesRw5QSlMnbQ==
+  dependencies:
+    prosemirror-state "^1.2.2"
+    prosemirror-transform "^1.0.0"
+    prosemirror-view "^1.31.0"
+    rope-sequence "^1.3.0"
+
+prosemirror-inputrules@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.npmjs.org/prosemirror-inputrules/-/prosemirror-inputrules-1.4.0.tgz"
+  integrity sha512-6ygpPRuTJ2lcOXs9JkefieMst63wVJBgHZGl5QOytN7oSZs3Co/BYbc3Yx9zm9H37Bxw8kVzCnDsihsVsL4yEg==
+  dependencies:
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.0.0"
+
+prosemirror-keymap@^1.0.0, prosemirror-keymap@^1.1.2, prosemirror-keymap@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.npmjs.org/prosemirror-keymap/-/prosemirror-keymap-1.2.2.tgz"
+  integrity sha512-EAlXoksqC6Vbocqc0GtzCruZEzYgrn+iiGnNjsJsH4mrnIGex4qbLdWWNza3AW5W36ZRrlBID0eM6bdKH4OStQ==
+  dependencies:
+    prosemirror-state "^1.0.0"
+    w3c-keyname "^2.2.0"
+
+prosemirror-model@^1.0.0, prosemirror-model@^1.20.0, prosemirror-model@^1.21.0, prosemirror-model@^1.8.1, prosemirror-model@1.21.0:
+  version "1.21.0"
+  resolved "https://registry.npmjs.org/prosemirror-model/-/prosemirror-model-1.21.0.tgz"
+  integrity sha512-zLpS1mVCZLA7VTp82P+BfMiYVPcX1/z0Mf3gsjKZtzMWubwn2pN7CceMV0DycjlgE5JeXPR7UF4hJPbBV98oWA==
+  dependencies:
+    orderedmap "^2.0.0"
+
+prosemirror-schema-list@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/prosemirror-schema-list/-/prosemirror-schema-list-1.3.0.tgz"
+  integrity sha512-Hz/7gM4skaaYfRPNgr421CU4GSwotmEwBVvJh5ltGiffUJwm7C8GfN/Bc6DR1EKEp5pDKhODmdXXyi9uIsZl5A==
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.7.3"
+
+prosemirror-state@^1.0.0, prosemirror-state@^1.2.2, prosemirror-state@^1.3.1, prosemirror-state@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.npmjs.org/prosemirror-state/-/prosemirror-state-1.4.3.tgz"
+  integrity sha512-goFKORVbvPuAQaXhpbemJFRKJ2aixr+AZMGiquiqKxaucC6hlpHNZHWgz5R7dS4roHiwq9vDctE//CZ++o0W1Q==
+  dependencies:
+    prosemirror-model "^1.0.0"
+    prosemirror-transform "^1.0.0"
+    prosemirror-view "^1.27.0"
+
+prosemirror-tables@1.3.7:
+  version "1.3.7"
+  resolved "https://registry.npmjs.org/prosemirror-tables/-/prosemirror-tables-1.3.7.tgz"
+  integrity sha512-oEwX1wrziuxMtwFvdDWSFHVUWrFJWt929kVVfHvtTi8yvw+5ppxjXZkMG/fuTdFo+3DXyIPSKfid+Be1npKXDA==
+  dependencies:
+    prosemirror-keymap "^1.1.2"
+    prosemirror-model "^1.8.1"
+    prosemirror-state "^1.3.1"
+    prosemirror-transform "^1.2.1"
+    prosemirror-view "^1.13.3"
+
+prosemirror-transform@^1.0.0, prosemirror-transform@^1.1.0, prosemirror-transform@^1.2.1, prosemirror-transform@^1.7.3, prosemirror-transform@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.npmjs.org/prosemirror-transform/-/prosemirror-transform-1.9.0.tgz"
+  integrity sha512-5UXkr1LIRx3jmpXXNKDhv8OyAOeLTGuXNwdVfg8x27uASna/wQkr9p6fD3eupGOi4PLJfbezxTyi/7fSJypXHg==
+  dependencies:
+    prosemirror-model "^1.21.0"
+
+prosemirror-view@^1.0.0, prosemirror-view@^1.1.0, prosemirror-view@^1.13.3, prosemirror-view@^1.27.0, prosemirror-view@^1.31.0, prosemirror-view@1.33.6:
+  version "1.33.6"
+  resolved "https://registry.npmjs.org/prosemirror-view/-/prosemirror-view-1.33.6.tgz"
+  integrity sha512-zRLUNgLIQfd8IfGprsXxWTjdA8xEAFJe8cDNrOptj6Mop9sj+BMeVbJvceyAYCm5G2dOdT2prctH7K9dfnpIMw==
+  dependencies:
+    prosemirror-model "^1.20.0"
+    prosemirror-state "^1.0.0"
+    prosemirror-transform "^1.1.0"
 
 punycode@^2.1.0:
   version "2.3.1"
@@ -2727,7 +3092,7 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18, react-dom@^18.2.0, react-dom@>=16, react-dom@>=16.6.0, react-dom@>=16.8.0:
+"react-dom@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react-dom@^16.8.2 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.0 || ^18.0.0", react-dom@^18, react-dom@^18.2.0, react-dom@>=16, react-dom@>=16.6.0, react-dom@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -2774,7 +3139,7 @@ react-toastify@^10.0.2:
   dependencies:
     clsx "^2.1.0"
 
-react-transition-group@^4.4.5:
+react-transition-group@^4.4.2, react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.npmjs.org/react-transition-group/-/react-transition-group-4.4.5.tgz"
   integrity sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==
@@ -2784,7 +3149,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^17.0.0 || ^18.0.0", react@^18, react@^18.0, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.6.0, react@>=16.8.0:
+"react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0", "react@^16.8.2 || ^17.0.0 || ^18.0.0", "react@^16.9.0 || ^17.0.0 || ^18", "react@^17.0.0 || ^18.0.0", react@^18, react@^18.0, react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@>=16.6.0, react@>=16.8.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -2895,6 +3260,11 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
+rope-sequence@^1.3.0:
+  version "1.3.4"
+  resolved "https://registry.npmjs.org/rope-sequence/-/rope-sequence-1.3.4.tgz"
+  integrity sha512-UT5EDe2cu2E/6O4igUr5PSFs23nvvukicWHx6GnOPlHAiiYbzNuCRQCuiUdHJQcqKalLKlrYJnjY0ySGsXNQXQ==
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.npmjs.org/run-parallel/-/run-parallel-1.2.0.tgz"
@@ -2912,7 +3282,7 @@ safe-array-concat@^1.0.1:
     has-symbols "^1.0.3"
     isarray "^2.0.5"
 
-safe-buffer@~5.2.0:
+safe-buffer@^5.0.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
@@ -3315,7 +3685,12 @@ tsconfig-paths@^3.15.0:
     minimist "^1.2.6"
     strip-bom "^3.0.0"
 
-tslib@^2.4.0:
+tslib@^1.7.0:
+  version "1.14.1"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
+  integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
+
+tslib@^2.3.1, tslib@^2.4.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
@@ -3417,6 +3792,11 @@ util-deprecate@^1.0.1, util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+w3c-keyname@^2.2.0:
+  version "2.2.8"
+  resolved "https://registry.npmjs.org/w3c-keyname/-/w3c-keyname-2.2.8.tgz"
+  integrity sha512-dpojBhNsCNN7T82Tm7k26A6G9ML3NkhDsnw9n/eoxSRlVBB4CEtIQ/KTCLI2Fwf3ataSXRhYFkQi3SlnFwPvPQ==
 
 warning@^4.0.0:
   version "4.0.3"
