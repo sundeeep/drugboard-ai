@@ -37,10 +37,13 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    if (!currentUserData?.prefs?.userName || !currentUserData?.prefs?.displayName|| !currentUserData?.prefs?.resignation||!currentUserData?.prefs?.profileImageURL||!currentUserData?.prefs?.profileImageID) {
-      // console.log(currentUserData.prefs);
-      if (!isModalOpen) setIsModalOpen(true);
+    if (currentUserData) {
+      const { userName, displayName, resignation, profileImageURL, profileImageID } = currentUserData?.prefs;
+      if (!userName || !displayName|| !resignation||!profileImageURL||!profileImageID) {
+        if (!isModalOpen) setIsModalOpen(true);
+      }
     }
+    console.log(currentUserData?.prefs);
   }, [currentUserData]);
   
   return (
