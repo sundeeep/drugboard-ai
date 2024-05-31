@@ -62,6 +62,7 @@ const Home = () => {
           >
             <UserEditor
               CloseModal={closeModal}
+              setCurrentUserData={setCurrentUserData}
               currentUserData={currentUserData}
             />
           </CentralModal>

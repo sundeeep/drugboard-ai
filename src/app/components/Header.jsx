@@ -12,12 +12,13 @@ import SecondaryButton from "@/components/ui/buttons/SecondaryButton";
 const Header = ({setCurrentUserData, currentUserData}) => {
   const [logInLoader, setLogInLoader] = useState(false);
   const auth = new AppWriteAuth();
+
   
     const handleSignIn = async () => {
         setLogInLoader(true);
         const response = await auth.SignInWithGoogle(
-          `https://www.drugboard.ai`,
-          "https://www.drugboard.ai"
+          `https://drugboard.ai/`,
+          "https://drugboard.ai/"
         );
       if (response) {
         try {
