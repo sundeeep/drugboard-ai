@@ -17,8 +17,8 @@ const Header = ({setCurrentUserData, currentUserData}) => {
     const handleSignIn = async () => {
         setLogInLoader(true);
         const response = await auth.SignInWithGoogle(
-          `https://drugboard.ai/`,
-          "https://drugboard.ai/"
+          `http://localhost:3000/`,
+          "http://localhost:3000/"
         );
       if (response) {
         try {
