@@ -17,8 +17,8 @@ const Header = ({setCurrentUserData, currentUserData}) => {
     const handleSignIn = async () => {
         setLogInLoader(true);
         const response = await auth.SignInWithGoogle(
-          `https://drugboard.ai/`,
-          "https://drugboard.ai/"
+          `http://localhost:3000/`,
+          "http://localhost:3000/"
         );
       if (response) {
         try {
@@ -71,14 +71,14 @@ const Header = ({setCurrentUserData, currentUserData}) => {
                 onClick={handleSignIn}
                 icon={<VpnKeyRoundedIcon />}
               >
-                Sign In
+                UNLOCK DRUGBOARD
               </PrimaryButton>
-              <SecondaryButton
+              {/* <SecondaryButton
                 onClick={handleSignIn}
                 icon={<VpnKeyRoundedIcon />}
               >
                 Register
-              </SecondaryButton>
+              </SecondaryButton> */}
             </div>
           )}
         </div>

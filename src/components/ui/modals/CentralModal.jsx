@@ -3,18 +3,22 @@ import CancelRoundedIcon from "@mui/icons-material/CancelRounded";
 
 const CentralModal = ({ children, modalTitle, isModalOpen, CloseModal }) => {
     return (
-        <Modal open={isModalOpen} onclose={CloseModal}>
+      <Modal open={isModalOpen} onclose={CloseModal}>
         <div className={styles.modalContainer}>
-            <header className="flex justify-between items-center p-3">
-            <h1 className=" text-gray-700 text-xl font-semibold">{modalTitle}</h1>
-            {CloseModal && <IconButton onClick={CloseModal}>
+          <header className="sticky inset-x-0 top-0 flex justify-between items-center p-3 bg-[#ECFDF5] rounded-lg">
+            <h1 className=" text-gray-700 text-xl font-semibold">
+              {modalTitle}
+            </h1>
+            {CloseModal && (
+              <IconButton onClick={CloseModal}>
                 <CancelRoundedIcon className="text-xl text-red-500" />
-            </IconButton>}
-            </header>
-            <hr className="border-t border-gray-400" />
-            {children}
+              </IconButton>
+            )}
+          </header>
+          <hr className="border-t border-[#86EFAC]" />
+          {children}
         </div>
-        </Modal>
+      </Modal>
     );
 };
 

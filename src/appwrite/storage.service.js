@@ -15,7 +15,7 @@ class AppWriteStorage {
         ID.unique(),
         FileObject
       );
-      console.log(response);
+      // console.log(response);
       if (response) {
         const FileURL = await this.showFile(BUCKET_ID, response.$id);
         if (FileURL) return [response.$id, FileURL?.href];
